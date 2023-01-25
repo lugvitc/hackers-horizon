@@ -6,26 +6,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/timer.css" />
+        <link rel="stylesheet" href="css/regbutton.css" />
+        <script src=".js/jquery.min.js"></script>
         <script defer src="js/script.js"></script>
         <script defer src="js/timer.js"></script>
     </head>
     <body>
         <header>
+            
             <div id="landing">
                 Linux Club presents
                 <h1>Hackers' Horizon</h1>
                 <p>Your chance to learn from the best of the best!</p>
-                <div id="register-button">
-                    <a href="wherever">register here</a>
-                </div>
             </div>
-
-            <div id="countdown"><span id="timer"></span> left</div>
+              
             <nav id="navbar">
                 <a href="#faqs">FAQs</a>
                 <a href="#speaker">About the Speaker</a>
             </nav>
-        </header>
+        </header>        
+        <!-- Creating an Register button -->
+        <div id="register-button">
+                    <button class="register">
+                        <!-- Linking Registration button to vit chennai events page -->
+                        <!-- Text-decoration: none -> hides the underline in the link for the button -->
+                        <a>
+                            Register here
+                        </a>
+                    </button>
+                </div>
         <section id="faqs">
             <h1>FAQs</h1>
             <div id="faq-details">

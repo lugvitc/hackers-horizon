@@ -35,3 +35,10 @@ nav {
 nav > a {
     display: block;
 }
+
+/* Changing the Cursor Style */
+* {
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1162.ani),
+    url(https://ani.cursors-4u.net/cursors/cur-13/cur1162.png),
+    auto !important;
+}
