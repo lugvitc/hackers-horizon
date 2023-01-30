@@ -1,4 +1,4 @@
-console.clear();
+// console.clear();
 // Not to be change anything
 import * as THREE from "https://cdn.skypack.dev/three@0.131.3";
 
@@ -12,7 +12,7 @@ const perlin = new ImprovedNoise();
 
 //Size of the canvas
 var container = document.getElementById("canvas");
-document.body.appendChild(container);
+// document.body.appendChild(container);
 
 // console.log(container)
 var w = container.offsetWidth;
@@ -202,7 +202,7 @@ let bm = new THREE.MeshBasicMaterial({
         vec3 col = mix(c1, c2, f);
       vec4 diffuseColor = vec4( col, opacity );`
     );
-    console.log(shader.fragmentShader);
+    // console.log(shader.fragmentShader);
   }
 });
 bm.defines = { USE_UV: "" };

@@ -6,69 +6,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hackers Horizon</title>
         <link rel="stylesheet" href="css/style.css" />
-        <!-- Retero Heading -->
         <link rel="stylesheet" href="css/title.css" />
+        <link rel="stylesheet" href="css/navbar.css" />
 
         <script defer src="js/script.js"></script>
         <script defer src="js/timer.js"></script>
-        
-        <!-- Retro Animation -->
-        <script src="js/retero3js.js" type='module'></script>
+        <script defer src="js/navbar.js"></script>
+        <script src="js/retero3js.js" type="module"></script>
     </head>
     <body>
-        <header>
-            <!-- Nav Bar -->
-            <div  id="nav_bar">
-                <ul class="nav">
-                    <li><a href="#">Sample</a></li>
-                    <li><a href="#">Sample</a></li>
-              
-                </ul>
-            </div>
-
-            <!-- Div containing Animation -->
-            <div  id="canvas">
-                <div  class="text">
-                    <div  class="heading">
-                        <h1>
-                          <span>HACKERS</span>
-                          <span>HACKERS</span>
-                        </h1>
-                        <h2>Horizon</h2>
-                    </div>
-                </div>   
-            </div>
-
-            <!-- Another Sections to be added here, and styling in style.css -->
-            <div class="section">
-                <div class="h1">
-                  <h3>heyy</h3>
-                </div>
-              
-                <div class="h2">
-                  <h3>heyy</h3>
-                </div>
-            </div>
-
-            <!-- <div id="landing">
+        <nav id="navbar">
+            <ul class="nav">
+                <li><a href="#">Hackers' Horizon</a></li>
+                <li><a href="#faqs">FAQ</a></li>
+                <li><a href="#speaker">About the Speaker</a></li>
+            </ul>
+        </nav>
+        <header id="header">
+            <div id="canvas"></div>
+            <div id="landing">
                 Linux Club presents
-                <h1>Hackers' Horizon</h1>
-                <p>Your chance to learn from the best of the best!</p>
-                <div id="register-button">
-                    <a href="wherever">register here</a>
+                <div class="heading noselect">
+                    <h1>
+                        <span>HACKERS'</span>
+                        <span>HACKERS'</span>
+                    </h1>
+                    <h2>Horizon</h2>
                 </div>
-            </div> -->
-
-            <!-- <div id="countdown"><span id="timer"></span> left</div>
-            <nav id="navbar">
-                <a href="#faqs">FAQs</a>
-                <a href="#speaker">About the Speaker</a>
-            </nav> -->
+                <p>Your chance to learn from the best of the best!</p>
+            </div>
+            <div id="register-button">
+                <a href="wherever">register here</a>
+            </div>
+            <!-- <div id="spacer-for-grid-pls-change-this"></div> -->
+            <div id="countdown"><span id="timer"></span> left</div>
         </header>
 
-
-        <!-- <section id="faqs">
-            <h1>FAQs</h1>
+        <section id="faqs">
+            <h1><span>FAQs</span><span>FAQs</span></h1>
             <div id="faq-details">
                 <details>
                     <summary>question</summary>
@@ -85,7 +60,7 @@
             </div>
         </section>
         <section id="speaker">
-            <h1>About the Speaker</h1>
+            <h2>About the Speaker</h2>
             The speaker is great!!
         </section>
         <footer>
@@ -95,6 +70,7 @@
                 <a>Instagram</a>
                 <a>Website</a>
             </nav>
-        </footer> -->
+        </footer>
     </body>
 </html>
+

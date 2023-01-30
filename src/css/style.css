@@ -2,15 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center; */
     margin: 0;
+    background-color: #000060;
+    color: #ccece6;
 }
 
-/* header,
+header,
 footer,
 section {
     display: grid;
@@ -19,60 +20,39 @@ section {
 }
 
 header {
-    grid-template-rows: 50fr 40fr 10fr;
-} */
+    isolation: isolate; /* reset z-index for this area */
+    background-color: transparent;
+    position: relative;
+    grid-template-rows: 30fr 25fr 45fr;
+}
+
+header > * {
+    z-index: 1;
+}
+
+#canvas {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
 
 footer {
-    height: 30vh;
+    height: 50vh;
+    background-color: black;
 }
 
-/* Nav bar styling */
-
-ul.nav {
-    margin:0;
-    padding:0;
-    list-style:none;
-    height:36px; line-height:36px;
-    background:#000060; /* you can change the backgorund color here. */
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:13px;
-}
-
-ul.nav li {
-    border-right:1px solid #189b80; /* you can change the border color matching to your background color */
-    float:left;
-}
-
-ul.nav a {
-    display:block;
-    padding:0 28px;
-    color:#ccece6;
-    text-decoration:none;
-}
-
-ul.nav a:hover,
-ul.nav li.current a {
-    background:#086754;
-}
-
-/* Landing Page Styling */
-.text {
-    position: absolute;
-    top: 2vh;
+.h1 {
+    position: relative;
     width: 100%;
-    text-align: center;
 }
-  
-  /* Animation conataining div */
-#canvas {
-    background-color: #FFF;
-    width: 100%;
-    height: 600px;
-    position: absolute;
-  
+
+.h2 {
+    position: relative;
+    top: 88%;
 }
-  
-  
+
 .noselect {
     -webkit-touch-callout: none;
     /* iOS Safari */
@@ -87,24 +67,4 @@ ul.nav li.current a {
     user-select: none;
     /* Non-prefixed version, currently
     supported by Chrome and Opera */
-}
-  
-.section{
-    position: absolute;
-    top: 88%;
-    border: 4px solid black;
-    width: 100%;
-}
-
-.h1{
-    position: relative;
-    width: 100%;
-    /* border: 4px solid black; */
-   
-}
-  
-.h2{
-    position: relative;
-    top:88%;
-  
 }
