@@ -8,7 +8,11 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/title.css" />
         <link rel="stylesheet" href="css/navbar.css" />
+        <link rel="stylesheet" href="css/footer-icons.css" />
         <link rel="stylesheet" href="css/faq.css" />
+        
+        <!-- Importing icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
 
         <script defer src="js/script.js"></script>
         <script defer src="js/timer.js"></script>
@@ -219,11 +223,29 @@
             The speaker is great!!
         </section>
         <footer>
-            <p>Made with love by lug vitc</p>
+            <!-- <p>Made with love by lug vitc</p> -->
+            <div class="containerr">
+                <svg viewBox="0 0 9600 300">
+                  <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="80%">Made with love by lug vitc</text>
+                  </symbol>
+              
+                  <g class = "g-ants">
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                  </g>
+                </svg>
+              </div>
             <nav id="external-links">
-                <a>Discord</a>
-                <a>Instagram</a>
-                <a>Website</a>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                </ul>
             </nav>
         </footer>
     </body>
