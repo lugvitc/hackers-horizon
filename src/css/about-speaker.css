@@ -1,0 +1,108 @@
+
+#speaker {
+    grid-template-rows: 100px 50px 550px;
+    grid-template-columns: 70fr 30fr;
+    grid-template-areas: 
+        'header header'
+        'title image'
+        'text image';
+    margin: 0px 200px;
+    gap: 10px 10px;
+    text-align: center;
+}
+
+#speaker-heading {
+    grid-area: 'header';
+    width: 100%;
+    height: 100%;
+    /*background-color: #383838;*/
+    grid-area: 1/1/span 1/span 2;
+}
+
+
+.speaker-name {
+    grid-area: 'title';
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin: 0;
+    margin-top: -1.3em;
+    color: #5f5f5f;
+    text-shadow: none;
+    text-transform: uppercase;
+    /*background-color: #6b6b6b;*/
+    grid-area: 2/1/span 1/span 1;
+}
+
+.speaker-name-animate {
+    grid-area: 'title';
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin: 0;
+    margin-top: -1.3em;
+    color: white;
+    text-shadow: 0 0 0.05em #fff, 0 0 20px #fe05e1, 0 0 40px #fe05e1, 0 0 80px #fe05e1, 0 0 160px #fe05e1;
+    text-transform: uppercase;
+    animation: tubelight 5s linear;
+    /*background-color: #6b6b6b;*/
+    grid-area: 2/1/span 1/span 1;
+}
+
+#speaker-details {
+    grid-area: 'text';
+    width: 100%;
+    height: 550px;
+    padding: 24px;
+    overflow: scroll;
+    /*background-color: hsl(0, 0%, 53%);*/
+    grid-area: 3/1/span 1/span 1;
+}
+
+#speaker-image {
+    grid-area: 'image';
+    width: 75%;
+    height: 100%;
+    /*padding: 24px;*/
+    position: relative;
+    /*background-color: #a7a7a7;*/
+    grid-area: 2/2/span 2/span 1;
+}
+
+#img1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+#img2 {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    z-index: 3;
+}
+
+#back-logo {
+    position: absolute;
+    top:90px;
+    right:-45px;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+@keyframes tubelight {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
+        color: #5f5f5f;
+        text-shadow: none;
+        /*text-shadow: 0 0 0.05em rgb(0, 0, 0), 0 0 20px rgb(95, 95, 95), 0 0 40px rgb(95, 95, 95);*/
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100% {
+        color: #fff;
+        text-shadow: 0 0 0.05em #fff, 0 0 20px #fe05e1, 0 0 40px #fe05e1, 0 0 80px #fe05e1, 0 0 160px #fe05e1;
+    }
+}
