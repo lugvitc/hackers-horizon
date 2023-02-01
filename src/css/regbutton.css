@@ -16,17 +16,17 @@
 }
 
 .register {
-    background-color : #bb5fed;
+    background-color: #bb5fed;
     /* color: white; */
     padding: 10px 20px;
-    border:0;
+    border: 0;
     border-radius: 20px;
     /* border-radius: 4px; */
     /* border-color: #46b8da; */
-  }
-  
-  #register-button {
+}
+
+#register-button {
     position: fixed;
     bottom: 10px;
     right: 10px;
-  }
+}
