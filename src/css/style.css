@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
     scroll-behavior: smooth;
 }
 
@@ -9,6 +9,7 @@ body {
     margin: 0;
     background-color: #000060;
     color: #ccece6;
+    overflow-x: hidden;
 }
 
 header,
@@ -17,6 +18,9 @@ section {
     display: grid;
     place-items: center;
     height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
 }
 
 header {
@@ -36,9 +40,10 @@ header > * {
     top: 0;
     width: 100%;
     height: 100%;
+
+    max-width: 100vw;
+    max-height: 100vh;
 }
-
-
 
 .h1 {
     position: relative;
@@ -69,6 +74,6 @@ header > * {
 /* Changing the Cursor Style */
 * {
     cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1162.ani),
-    url(https://ani.cursors-4u.net/cursors/cur-13/cur1162.png),
-    auto !important;
+        url(https://ani.cursors-4u.net/cursors/cur-13/cur1162.png), auto !important;
 }
+
