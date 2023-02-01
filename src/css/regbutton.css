@@ -1,28 +1,28 @@
 .register a {
-    text-decoration: none !important;
-    letter-spacing: 3px;
-    color: rgb(255, 255, 255);
-    display: block;
-    font-family: 'Press Start 2P', cursive;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+  text-decoration: none !important;
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255);
+  display: block;
+  font-family: 'Press Start 2P', cursive;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .register a:hover {
-    /* background: white; */
-    /* color: black; */
-    letter-spacing: 5px;
-    /* box-shadow: 20px 16px 0px 0px #000000; */
+  /* background: white; */
+  /* color: black; */
+  letter-spacing: 5px;
+  /* box-shadow: 20px 16px 0px 0px #000000; */
 }
 
 .register {
-    background-color : #bb5fed;
-    /* color: white; */
-    padding: 10px 20px;
-    border:0;
-    border-radius: 20px;
-    /* border-radius: 4px; */
-    /* border-color: #46b8da; */
+  background-color : #bb5fed;
+  /* color: white; */
+  padding: 10px 20px;
+  border:0;
+  border-radius: 20px;
+  /* border-radius: 4px; */
+  /* border-color: #46b8da; */
   }
   
   #register-button {
@@ -30,3 +30,34 @@
     bottom: 10px;
     right: 10px;
   }
+
+  .buttonreg a {
+  text-decoration: none !important;
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255);
+  display: block;
+  font-family: 'Press Start 2P', cursive;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.buttonreg a:hover {
+  /* background: white; */
+  /* color: black; */
+  letter-spacing: 5px;
+  /* box-shadow: 20px 16px 0px 0px #000000; */
+}
+
+.buttonreg {
+  background-color : #6741c1;
+  border: 2px white;
+  /* color: white; */
+  padding: 10px 20px;
+  border:0;
+  border-radius: 20px;
+  /* border-radius: 4px; */
+}
+#button-register {
+  position: relative;
+  bottom: -100px;
+}
