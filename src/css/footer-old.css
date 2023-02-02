@@ -13,7 +13,9 @@ footer {
     display: inline-block;
     margin: 2.15em;
     position: relative;
-    font-size: 2.28em;
+
+    --bg-size: clamp(4rem, 4rem, 11.42rem);
+    font-size: clamp(1.4rem, 1.4rem, 4rem);
 }
 
 .social-icons i {
@@ -33,8 +35,8 @@ footer {
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     content: ' ';
-    width: 101px;
-    height: 101px;
+    width: var(--bg-size);
+    height: var(--bg-size);
     border-radius: 100%;
     display: block;
     background: linear-gradient(45deg, #00f7ff, #11afd6);
@@ -61,7 +63,7 @@ footer {
 
 svg {
     display: block;
-    font: 18vw 'Montserrat';
+    font: clamp(23rem, 18vw, 30rem) 'Montserrat';
     width: 100%;
     height: 10vh;
     /* box-shadow: 10px 10px 99px 0px rgb(6, 82, 103); */

@@ -1,0 +1,49 @@
+footer {
+    height: 50vh;
+    background-color: black;
+    place-items: center stretch;
+
+    --highlight-blue: #40abc5;
+}
+
+footer > div:first-child {
+    text-align: center;
+    font-size: clamp(1em, 30vw, 2em);
+    font-family: 'Exo', sans-serif;
+    color: var(--highlight-blue);
+}
+
+nav.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2em;
+}
+
+a.footer-link {
+    display: block;
+    background-color: var(--highlight-blue);
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    --size: clamp(3em, 10vw, 5em);
+    height: var(--size);
+    width: var(--size);
+    transition: 0.3s ease-in;
+}
+
+a.footer-link > i {
+    font-size: calc(var(--size) / 2);
+    color: var(--main-bg-blue);
+    transition: 0.4s ease-in;
+}
+
+a.footer-link:hover i {
+    transform: scale(2);
+    color: var(--highlight-blue);
+}
+
+a.footer-link:hover {
+    background-color: transparent;
+}
