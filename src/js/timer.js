@@ -15,5 +15,23 @@ setInterval(() => {
     const timeLeft = eventDate.getTime() - today.getTime();
     const { secondsLeft, minutesLeft, hoursLeft, daysLeft } =
         msToTime(timeLeft);
-    timer.innerHTML = `${daysLeft} days, ${hoursLeft} hours, ${minutesLeft} minutes, ${secondsLeft} seconds`;
+    timer.innerHTML = `
+    <div class="card">
+        <div class="count">${daysLeft}</div>
+        <div class="unit">Days</div>
+    </div>
+    <div class="card">
+        <div class="count">${hoursLeft}</div>
+        <div class="unit">Hours</div>
+    </div>
+    <div class="card">
+        <div class="count">${minutesLeft}</div>
+        <div class="unit">Minutes</div>
+    </div>
+    <div class="card">
+        <div class="count">${secondsLeft}</div>
+        <div class="unit">Seconds</div>
+    </div>
+    `;
 }, 1000);
+
