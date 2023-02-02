@@ -2,8 +2,6 @@ footer {
     height: 50vh;
     background-color: black;
     place-items: center stretch;
-
-    --highlight-blue: #40abc5;
 }
 
 footer > div:first-child {

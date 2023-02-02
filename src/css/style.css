@@ -7,6 +7,8 @@
 
 :root {
     --main-bg-blue: #000060;
+    --highlight-blue: #40abc5;
+    --highlight-pink: #ff61af;
 }
 
 body {
@@ -14,6 +16,7 @@ body {
     background-color: var(--main-bg-blue);
     color: white;
     overflow-x: hidden;
+    font-family: 'Exo', sans-serif;
 }
 
 header,

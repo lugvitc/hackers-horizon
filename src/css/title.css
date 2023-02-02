@@ -6,6 +6,8 @@
     font-size: clamp(10px, 2vw, 20px);
 
     text-align: center;
+
+    --pink-glow-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
 }
 
 h1 {
@@ -21,7 +23,7 @@ header h1 {
     position: relative;
     font-family: 'Exo';
     font-size: 6em;
-    margin: 25px;
+    margin: 10px;
     transform: skew(-15deg);
     letter-spacing: 0.03em;
 }
@@ -74,7 +76,18 @@ h2 {
     font-size: 5.2em;
     margin-top: -1.3em;
     color: white;
-    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+    text-shadow: var(--pink-glow-shadow);
     transform: rotate(-7deg);
+}
+
+#landing {
+    font-family: 'Exo', sans-serif;
+}
+
+#subheading {
+    font-family: 'Mr Dafoe', sans-serif;
+    text-align: center;
+    text-shadow: var(--pink-glow-shadow);
+    font-size: 1.5em;
 }
 
