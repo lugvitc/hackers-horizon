@@ -2337,10 +2337,4 @@ var FlipClock;
 
 }(jQuery));
 
-	
-	/* Create various aliases for convenience */
-
-	FlipClock.Lang['zh']      = FlipClock.Lang.Chinese;
-	FlipClock.Lang['zh-cn']   = FlipClock.Lang.Chinese;
-	FlipClock.Lang['chinese'] = FlipClock.Lang.Chinese;
 

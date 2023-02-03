@@ -1,14 +1,22 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: inherit; */
     scroll-behavior: smooth;
+}
+
+:root {
+    --main-bg-blue: #000060;
+    --highlight-blue: #40abc5;
+    --highlight-pink: #ff61af;
 }
 
 body {
     margin: 0;
-    background-color: #000060;
-    color: #ccece6;
+    background-color: var(--main-bg-blue);
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Exo', sans-serif;
 }
 
 header,
@@ -16,7 +24,14 @@ footer,
 section {
     display: grid;
     place-items: center;
+    width: 100vw;
+}
+
+header,
+section {
+    max-width: 100vw;
     height: 100vh;
+    min-height: 100vh;
 }
 
 header {
@@ -36,9 +51,10 @@ header > * {
     top: 0;
     width: 100%;
     height: 100%;
+
+    max-width: 100vw;
+    max-height: 100vh;
 }
-
-
 
 .h1 {
     position: relative;
@@ -69,6 +85,6 @@ header > * {
 /* Changing the Cursor Style */
 * {
     cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1162.ani),
-    url(https://ani.cursors-4u.net/cursors/cur-13/cur1162.png),
-    auto !important;
+        url(https://ani.cursors-4u.net/cursors/cur-13/cur1162.png), auto !important;
 }
+
