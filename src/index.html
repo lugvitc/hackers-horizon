@@ -16,16 +16,16 @@
         <link rel="stylesheet" href="css/faq.css" />
 
         <!-- Importing icons -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        />
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+        <script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script defer src="js/script.js"></script>
         <script defer src="js/timer.js"></script>
+        <script defer src="js/regbutton.js"></script>
         <script defer src="js/navbar.js"></script>
-        <!-- <script defer src="js/logos-scroll.js"></script> -->
-        <script defer src="js/speaker-name.js"></script>
+
+        <!-- <script defer src="js/logos-scroll.js"></script>
+        <script defer src="js/speaker-name.js"></script> -->
+        <!-- <script src=".js/jquery.min.js"></script> -->
         <script src="js/retero3js.js" type="module"></script>
         <script defer src="js/faq.js"></script>
     </head>
@@ -54,17 +54,22 @@
                     </h1>
                     <h2>Horizon</h2>
                 </div>
-                <div id="subheading">
-                    Your chance to learn from the best of the best!
+                <p>Your chance to learn from the best of the best!</p>
+                <main>
+                    <div id="button-register">
+                        <button class = "buttonreg">
+                            <a>
+                                Register here
+                            </a>
+                        </button>
+                    </div>
+                </main>
+                <div>
+                    <div class="clock" style="margin-top: 40%;"></div>
+                    <div class="message"></div>
                 </div>
             </div>
-            <a
-                id="landing-register-button"
-                href="https://www.vitchennaievents.com/conf1/index.php?eventid=1217"
-            >
-                Register now!
-            </a>
-            <div id="timer"></div>
+            <!-- <div id="spacer-for-grid-pls-change-this"></div> -->
         </header>
         <section id="faqs">
             <h1><span>FAQs</span><span>FAQs</span></h1>
@@ -241,21 +246,35 @@
             </svg>
             <nav id="external-links">
                 <ul class="social-icons">
-                    <li>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </li>
+                    <li><a href="https://www.instagram.com/lugvitc/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/lugvitc" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/lugvitc" target="_blank"><i class="fab fa-github"></i></a></li>
                 </ul>
             </nav>
-        </footer> -->
+        </footer>
+        <script type="text/javascript">
+            var clock;
+            
+            $(document).ready(function() {
+                var clock;
+    
+                clock = $('.clock').FlipClock({
+                    clockFace: 'DailyCounter',
+                    autoStart: false,
+                    callbacks: {
+                        stop: function() {
+                            $('.message').html('The clock has stopped!')
+                        }
+                    }
+                });
+                        
+                clock.setTime(707400);
+                clock.setCountdown(true);
+                clock.start();
+    
+            });
+        </script>
     </body>
 </html>
 
