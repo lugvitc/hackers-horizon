@@ -4,7 +4,7 @@ const id = id => document.getElementById(id);
 
 const tags = tag => {
     let elements = [];
-    for (let element of document.getElementsByTagName(className)) {
+    for (let element of document.getElementsByTagName(tag)) {
         elements.push(element);
     }
     return elements;
