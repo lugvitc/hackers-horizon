@@ -87,7 +87,6 @@ h2 {
 #subheading {
     font-family: 'Mr Dafoe', sans-serif;
     text-align: center;
-    text-shadow: var(--pink-glow-shadow);
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 

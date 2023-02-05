@@ -1,26 +1,36 @@
 #timer {
     width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#timer > div:first-child {
+    font-size: 2em;
+    color: var(--main-bg-blue);
+
+    transition: 0.3s ease-out;
+}
+
+#timer > div:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 1em;
-    font-size: 1.5em;
 }
 
-#timer > .card {
+#timer .card {
     /* background-color: var(--highlight-pink); */
     color: var(--main-bg-blue);
     /* color: white; */
     border-radius: 20px;
     padding: 0.5em;
     text-align: center;
-    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1,
-        0 0 0.5em #fe05e1;
 
     transition: 0.3s ease-out;
 }
 
-#timer > .card:hover {
+#timer .card:hover,
+#timer > div:first-child:hover {
     color: white;
     transform: scale(1.3);
 }

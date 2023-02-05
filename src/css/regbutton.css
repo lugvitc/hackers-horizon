@@ -13,11 +13,21 @@
     border-radius: 2em;
 
     transition: 0.3s ease-out;
+    z-index: 10;
 }
 
 #register-button:hover {
     transform: scale(1.5);
     background-color: var(--highlight-pink);
+    box-shadow: 0 0.05em var(--highlight-blue), 0 0 0.2em var(--highlight-blue),
+        0 0 0.3em var(--highlight-blue), 0 0 0.5em var(--highlight-blue);
+}
+
+#register-button:active {
+    transform: scale(0.75);
+    background-color: var(--highlight-blue);
+    box-shadow: 0 0.05em #fe05e1, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1,
+        0 0 0.5em #fe05e1;
 }
 
 #landing-register-button {
@@ -31,6 +41,12 @@
 #landing-register-button:hover {
     text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
     color: white;
-    transform: scale(1.3);
+    transform: scale(2);
+}
+
+#landing-register-button:active {
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+    color: white;
+    transform: scale(0.75);
 }
 

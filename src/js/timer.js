@@ -10,28 +10,29 @@ const msToTime = ms => {
 };
 
 const timer = id('timer');
+const sec = id('seconds');
+const min = id('minutes');
+const hrs = id('hours');
+const dys = id('days');
+
+let prevTime;
+
 setInterval(() => {
     const today = new Date();
     const timeLeft = eventDate.getTime() - today.getTime();
     const { secondsLeft, minutesLeft, hoursLeft, daysLeft } =
         msToTime(timeLeft);
-    timer.innerHTML = `
-    <div class="card">
-        <div class="count">${daysLeft}</div>
-        <div class="unit">Days</div>
-    </div>
-    <div class="card">
-        <div class="count">${hoursLeft}</div>
-        <div class="unit">Hours</div>
-    </div>
-    <div class="card">
-        <div class="count">${minutesLeft}</div>
-        <div class="unit">Minutes</div>
-    </div>
-    <div class="card">
-        <div class="count">${secondsLeft}</div>
-        <div class="unit">Seconds</div>
-    </div>
-    `;
+    if (!prevTime) {
+        sec.innerHTML = secondsLeft;
+        min.innerHTML = minutesLeft;
+        hrs.innerHTML = hoursLeft;
+        dys.innerHTML = daysLeft;
+    } else if (minutesLeft !== prevTime.minutesLeft) {
+        min.innerHTML = minutesLeft;
+    } else if (hoursLeft !== prevTime.hoursLeft) {
+        hrs.innerHTML = hoursLeft;
+    } else if (minutesLeft !== prevTime.minutesLeft) {
+        dys.innerHTML = daysLeft;
+    }
 }, 1000);
 
