@@ -10,6 +10,26 @@
     --pink-glow-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
 }
 
+#sponsors {
+    font-size: 1.2em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+#sponsors a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#sponsors a:hover {
+    color: var(--highlight-blue);
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff;
+}
+
+#sponsors a:active {
+    color: var(--highlight-pink);
+}
+
 h1 {
     position: relative;
     font-family: 'Exo';
