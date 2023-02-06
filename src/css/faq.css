@@ -4,4 +4,6 @@
 
 #faqs > div:first-of-type {
     font-size: 1.5em;
+    padding-inline: 5em;
 }
+

@@ -1,50 +1,39 @@
-/* #speaker {
-    display: flex;
-    flex-direction: column;
-    align-content: ;
-} */
-
 #speaker {
-    grid-template-rows: 10fr 90fr;
-    overflow: hidden;
-}
-
-#speaker-div {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 70fr 30fr;
-    font-size: 1.5em;
-}
-
-#speaker-div > .about-speaker {
-    display: grid;
-    place-items: center;
-    padding-inline: 10em;
-    overflow-y: scroll;
-    height: 70vh;
-}
-
-#speaker-div > .speaker-image {
     position: relative;
-    width: 100%;
+    grid-template-rows: 20fr 80fr;
+    height: 100vh;
+    font-size: 2em;
 }
 
-#speaker-div > .speaker-image > img:first-child {
+.about-speaker {
+    padding-inline: 5em;
+    padding-inline-end: 7em;
+    position: relative;
+    overflow-y: scroll;
+    /* max-height: 70%; */
+}
+
+.speaker-image {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-48.1%, -48.1%);
+    width: 80vw;
+    z-index: -1;
+    filter: brightness(57%) opacity(70%);
+    bottom: 70%;
+    right: -10%;
+}
+
+.speaker-image > img {
+    position: absolute;
+    width: 80%;
+    max-width: 500px;
+    top: 0;
+}
+
+.speaker-image > img:first-child {
     z-index: 1;
-    width: 100%;
-    max-width: 500px;
 }
 
-#speaker-div > .speaker-image > img:nth-child(2) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 500px;
+.speaker-image > img:last-child {
+    z-index: 0;
+    transform: translate(-5%);
 }
